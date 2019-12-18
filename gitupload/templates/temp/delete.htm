@@ -1,0 +1,10 @@
+
+
+
+
+<from action ='.' method='POST'>{% csrf_token %}
+    <h1>do you want to delete obj "{{ object.name }}" ? </h1>
+    <p><input type="submit" value="Yes" > <a href="../">cancle</a> </p>
+
+</from>
+

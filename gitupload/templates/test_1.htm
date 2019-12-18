@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/jquery/">jQuery</a>
+</nav>
+
+<p><strong>Note:</strong> The nav tag is not supported in Internet Explorer 8 and earlier versions.</p>
+
+{% if object.name == 'sks'  %}
+this is if 
+{% else %}
+this is else
+{% endif %}
+
+{{object}}
+{# here object comes from the (view.py file ) in views.py we create a dictionary called test and here we use dictionary element for printing a varible here we use {{}}#}
+<br>
+{% for i in my_list %}
+    {# time.sleep(0.5) #}
+    {% if i == 20 %}
+    {{i|add:20}}
+    {% endif %}
+   {{ forloop.counter }} <br>  <h1>here are</h1> {{i}}
+{% endfor %}
+
+
+</body>
+</html>

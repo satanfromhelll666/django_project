@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>breaking bad</title>
+</head>
+<body>
+    {% include 'test_1.htm' %}
+    <h1>this is from base</h1>
+    {% block contain %}
+    <h1>this is base.htm</h1>
+    #replace
+    {% endblock %}
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <h1>new new</h1>
+    {% block tt %}
+
+    {% endblock %}
+
+    {% block content1 %}
+
+    {% endblock %}
+
+</body>
+</html>
